@@ -1,0 +1,9 @@
+!!!
+%html
+  %head
+    %title One Month Stripe Payments
+    = stylesheet_link_tag{:src => 'application', :media => 'all', :data-turbolinks-track => true}
+    = javascript_include_tag{:src => 'application', :data-turbolinks-track => true}
+    = csrf_meta_tags
+  %body
+    = yield
