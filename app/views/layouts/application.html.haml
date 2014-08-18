@@ -5,9 +5,9 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, user-scalable=no">
-    <link rel='stylesheet' href='http://fonts.googleapis.com/css?family=Open+Sans:400,700,300,800' >
-    = stylesheet_link_tag{:src => 'application', :media => 'all', :data-turbolinks-track => true}
-    = javascript_include_tag{:src => 'application', :data-turbolinks-track => true}
+    = stylesheet_link_tag    "http://fonts.googleapis.com/css?family=Open+Sans:400,700,300,800"
+    = stylesheet_link_tag    "application", media: "all", "data-turbolinks-track" => true
+    = javascript_include_tag "application", "data-turbolinks-track" => true
     = csrf_meta_tags
   %body
     .container#content
@@ -22,7 +22,7 @@
       .modal-dialog
         .modal-content
           .modal-header
-            %h4.modal-title <span class="glyphicon glyphicon-user"> About me </span>
+            %h4.modal-title <span class="glyphicon glyphicon-user"> About Rasheed </span>
           .modal-body.clearfix
             .pull-left#modal-left
               %p Hello.
