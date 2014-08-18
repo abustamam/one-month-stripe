@@ -10,4 +10,23 @@
     = javascript_include_tag{:src => 'application', :data-turbolinks-track => true}
     = csrf_meta_tags
   %body
-    = yield
+    .container#content
+      %header#content-header
+        #price-container
+          <span class="glyphicon glyphicon-tag"></span><span class="price">$4.99</span>
+        = image_tag('header-image.jpg', id: 'content-header-img', alt: "Learn Growth Hacking")
+      = yield
+    %footer#site-footer
+      Made by me
+    .modal.fade#author-modal
+      .modal-dialog
+        .modal-content
+          .modal-header
+            %h4.modal-title <span class="glyphicon glyphicon-user"> About me </span>
+          .modal-body.clearfix
+            .pull-left#modal-left
+              %p Hello.
+            .pull-right#modal-right
+              %p Hi.
+          .modal-footer
+            %button.btn.btn-default{:type => 'button', :data => {:dismiss => "modal"}} Close
