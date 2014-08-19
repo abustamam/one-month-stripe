@@ -25,7 +25,7 @@ gem 'coffee-rails', '~> 4.0.0'
 # See https://github.com/sstephenson/execjs#readme for more supported runtimes
 # gem 'therubyracer',  platforms: :ruby
 
-# Use figaro
+# Use figaro for securely managing credentials
 gem 'figaro'
 
 # Use jquery as the JavaScript library
@@ -44,7 +44,6 @@ gem 'spring',        group: :development
 gem 'haml'
 
 # Add stripe for payment processing
-gem 'netrc', '~>0.7.7'
 gem 'stripe', :git => 'https://github.com/stripe/stripe-ruby'
 
 # Use ActiveModel has_secure_password

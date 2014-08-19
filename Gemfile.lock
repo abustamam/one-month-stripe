@@ -1,6 +1,6 @@
 GIT
   remote: https://github.com/stripe/stripe-ruby
-  revision: 4aed61af42df22d77106558354bd2f5370c04e06
+  revision: afd42ecd416554d5c2493498aebe03cbfd9d7d68
   specs:
     stripe (1.15.0)
       json (~> 1.8.1)
@@ -50,6 +50,9 @@ GEM
     coffee-script-source (1.7.1)
     erubis (2.7.0)
     execjs (2.2.1)
+    figaro (0.7.0)
+      bundler (~> 1.0)
+      rails (>= 3, < 5)
     haml (4.0.5)
       tilt
     hike (1.2.3)
@@ -139,10 +142,10 @@ PLATFORMS
 DEPENDENCIES
   bootstrap-sass
   coffee-rails (~> 4.0.0)
+  figaro
   haml
   jbuilder (~> 2.0)
   jquery-rails
-  netrc (~> 0.7.7)
   pg
   rails (= 4.1.1)
   rails_12factor
