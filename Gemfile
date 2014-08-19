@@ -1,6 +1,7 @@
 source 'https://rubygems.org'
+source 'http://gems.github.com'
 
-ruby '2.1.1'
+ruby '2.1.0'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.1.1'
@@ -24,6 +25,9 @@ gem 'coffee-rails', '~> 4.0.0'
 # See https://github.com/sstephenson/execjs#readme for more supported runtimes
 # gem 'therubyracer',  platforms: :ruby
 
+# Use figaro
+gem 'figaro'
+
 # Use jquery as the JavaScript library
 gem 'jquery-rails'
 # Turbolinks makes following links in your web application faster. Read more: https://github.com/rails/turbolinks
@@ -40,6 +44,7 @@ gem 'spring',        group: :development
 gem 'haml'
 
 # Add stripe for payment processing
+gem 'netrc', '~>0.7.7'
 gem 'stripe', :git => 'https://github.com/stripe/stripe-ruby'
 
 # Use ActiveModel has_secure_password
