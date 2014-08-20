@@ -25,6 +25,7 @@
       = javascript_include_tag "https://checkout.stripe.com/v2/checkout.js"
       = hidden_field_tag 'stripeToken'
       = hidden_field_tag 'stripeEmail'
+      = hidden_field_tag 'amount', 499
       %button.btn.btn-success.btn-lg.btn-block#btn-buy{:type => "button"} <span class="glyphicon glyphicon-ok"></span>I want this!</button>
       = javascript_include_tag "stripe"
 

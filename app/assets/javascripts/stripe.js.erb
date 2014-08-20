@@ -10,7 +10,7 @@ var handler = StripeCheckout.configure({
   handler.open({
     name: 'One Month',
     description: 'Growth Hacking Crash Course ($4.99)',
-    amount: 499
+    amount: document.getElementById("amount").value
 });
 e.preventDefault();
 })
