@@ -17,16 +17,18 @@
         = image_tag('header-image.jpg', id: 'content-header-img', alt: "Learn Growth Hacking")
       = yield
     %footer#site-footer
-      Made by me
+      Made by Rasheed Bustamam
     .modal.fade#author-modal
       .modal-dialog
         .modal-content
           .modal-header
-            %h4.modal-title <span class="glyphicon glyphicon-user"> About Rasheed </span>
+            %h4.modal-title <span class="glyphicon glyphicon-user">About the Teacher</span>
           .modal-body.clearfix
             .pull-left#modal-left
-              %p Hello.
+              %p <strong>Mattan Griffel</strong>
+              %p Mattan Griffel is the co-founder of the Y Combinator backed <a href="http://www.onemonth.com" target="_blank">One Month</a>, where he teaches the best-selling One Month Rails and One Month Growth Hacking. 
+              %p He has advised companies like Pepsico, Bloomberg, GM, NYSE, and JPMorgan on growth hacking best practices. He has also spoken at NYU, Cooper Union, and First Round Capital. His goal is to help entrepreneurs rapidly grow their businesses.
             .pull-right#modal-right
-              %p Hi.
+              = image_tag('teacher-image.jpg', alt:"Mattan Griffel")
           .modal-footer
             %button.btn.btn-default{:type => 'button', :data => {:dismiss => "modal"}} Close
